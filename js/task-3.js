@@ -23,10 +23,9 @@ class Storage {
     removeItem(item) {
         for(let i = items.length - 1; i >= 0; i--) {
             if(items[i] === item) {
-                items.splice(i, 1);
+               return items.splice(i, 1);
             }
         }
-        return this.items;
     }
 }
 
